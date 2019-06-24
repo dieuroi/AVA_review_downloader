@@ -6,17 +6,11 @@
 
 **Bibtex:**
 ```
-@article{,
-title= {AVA: A Large-Scale Database for Aesthetic Visual Analysis},
-keywords= {images, aesthetics, semantic, quality, AVA, DPChallenge},
-journal= {},
-author= {Naila Murray and Luca Marchesotti and Florent Perronnin},
-year= {},
-url= {},
-license= {},
-abstract= {Aesthetic Visual Analysis (AVA) contains over 250,000 images along with a rich variety of meta-data including a large number of aesthetic scores for each image, semantic labels for over 60 categories as well as labels related to photographic style for high-level image quality categorization.},
-superseded= {},
-terms= {}
+@inproceedings{Perronnin2012AVA,
+  title={AVA: A large-scale database for aesthetic visual analysis},
+  author={Perronnin, Florent},
+  booktitle={IEEE Conference on Computer Vision & Pattern Recognition},
+  year={2012},
 }
 ```
 ```
@@ -35,27 +29,25 @@ AVA is a large-Scale database for aesthetic visual analysis containing 250000+ p
 
 However, the downloaded pakage only contains image list and annotations. You may need the script to download AVA images and corresponding reviews from website.
 
-~~- Known Issue~~
+- Known Issue~~
 
-~~With this script keep sending requests to dpchallenge.com, **the website would block your ip address for some time.**
+With this script keep sending requests to dpchallenge.com, **the website would block your ip address for some time.**
 I use a proxy to temporally avoid this block
 Contact me if you have any good ideas. Thank you!
-2017-1-17~~
+2017-1-17
 
-~~## Usage~~
+## Usage~~
 
-~~1. Download multiprocess.py getreviews.py xslt_lib.py to any directory you like.~~
+1. Download multiprocess.py getreviews.py xslt_lib.py to any directory you like.~~
 
-~~2. Make sure you have downloaded AVA Database (zip, 4.2 MB) from the [site](http://www.lucamarchesotti.com/ava/download/start_download.html).~~
+2. Make sure you have downloaded AVA Database (zip, 4.2 MB) from the [site](http://www.lucamarchesotti.com/ava/download/start_download.html).
 
-~~3. Unzip AVA_dataset.zip and place AVA.txt under the same directory as the script. Also create a folder 'image'~~
+3. Unzip AVA_dataset.zip and place AVA.txt under the same directory as the script. 
 
-~~4. Run the script with command $python multiprocess.py *beginIndex endIndex*~~
-
-~~5. **Tips:** Note that *beginIndex* and *endIndex* both range from 1 to 25553. Downloading all the images would **consume a lot of time**. It is recommended you download a small amount once a time.~~
+4. Run the script with command $python multiprocess.py (You would set the *startPos* in this script. Note that *startPos* and *endIndex* both range from 1 to 255530.)
 
 Happy downloading~ :sunglasses:
 
-Fing
+Dieuroi
 
 2017-1-17
